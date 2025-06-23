@@ -293,7 +293,7 @@ const App = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
             {specialties.map((specialty, index) => (
               <div key={index} className="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl overflow-hidden shadow-2xl hover:transform hover:scale-105 transition-all duration-500">
                 <div className="relative h-64 overflow-hidden">
@@ -320,6 +320,22 @@ const App = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Section Viandes Fraîches */}
+          <div className="bg-gradient-to-r from-orange-900/20 to-red-900/20 rounded-2xl p-8 border border-orange-500/30">
+            <h3 className="text-3xl font-bold text-center text-white mb-6">🥩 Nos Viandes Fraîches Halal</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {viandes.map((viande, index) => (
+                <div key={index} className="flex items-center space-x-3 bg-black/30 rounded-lg p-4">
+                  <div className="w-3 h-3 bg-orange-500 rounded-full"></div>
+                  <span className="text-white font-medium">{viande}</span>
+                </div>
+              ))}
+            </div>
+            <div className="text-center mt-6">
+              <p className="text-orange-300 font-semibold">Toutes nos viandes sont certifiées halal et préparées fraîches chaque jour</p>
+            </div>
           </div>
         </div>
       </section>
