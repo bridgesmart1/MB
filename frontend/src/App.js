@@ -352,12 +352,17 @@ const App = () => {
               
               <div className="grid gap-4">
                 {menuData[activeMenu]?.map((item, index) => (
-                  <div key={index} className="flex justify-between items-center p-4 bg-gray-700/50 rounded-xl hover:bg-gray-700 transition-colors duration-300">
-                    <div className="flex-1">
-                      <h4 className="text-white font-semibold text-lg">{item.name}</h4>
-                    </div>
-                    <div className="text-orange-400 font-bold text-lg">
-                      {item.price}
+                  <div key={index} className="p-6 bg-gradient-to-r from-gray-700/50 to-gray-800/50 rounded-xl hover:from-gray-600/60 hover:to-gray-700/60 transition-all duration-300 border border-orange-500/10 hover:border-orange-500/30">
+                    <div className="flex justify-between items-start">
+                      <div className="flex-1 pr-4">
+                        <h4 className="text-white font-bold text-lg mb-2">{item.name}</h4>
+                        {item.description && (
+                          <p className="text-gray-300 text-sm leading-relaxed">{item.description}</p>
+                        )}
+                      </div>
+                      <div className="text-orange-400 font-bold text-lg whitespace-nowrap">
+                        {item.price}
+                      </div>
                     </div>
                   </div>
                 ))}
