@@ -142,22 +142,32 @@ const App = () => {
   const specialties = [
     {
       title: 'Tacos Premium',
-      description: 'Nos tacos signature avec viandes halal sélectionnées et sauce fromagère maison',
+      description: 'Nos tacos en 3 tailles (M/L/XL) avec viandes halal sélectionnées : Escalope de poulet, Cordon bleu, Steak haché, Nuggets, Kebab, Tenders',
       image: 'https://images.pexels.com/photos/9095708/pexels-photo-9095708.jpeg',
-      price: 'à partir de 5.50€'
+      price: 'à partir de 5.00€'
     },
     {
-      title: 'Burgers Gourmets',
-      description: 'Burgers artisanaux avec steaks halal frais et pain brioche maison',
+      title: 'Burgers Artisanaux',
+      description: 'Burgers maison avec escalope de poulet grillé ou steak haché frais, accompagnés de nos sauces signature',
       image: 'https://images.pexels.com/photos/11690683/pexels-photo-11690683.jpeg',
-      price: 'à partir de 5.50€'
+      price: 'à partir de 4.50€'
     },
     {
       title: 'Assiettes Généreuses',
-      description: 'Assiettes complètes avec frites maison, salade fraîche et viandes halal',
+      description: 'Assiettes complètes à 15€ avec viandes halal fraîches, frites maison et salade. Un repas complet et savoureux !',
       image: 'https://images.unsplash.com/photo-1700513970028-d8a630d21c6e',
-      price: 'à partir de 10.00€'
+      price: '15.00€'
     }
+  ];
+
+  const viandes = [
+    'Escalope de poulet grillé maison',
+    'Steak haché frais',
+    'Cordon bleu',
+    'Merguez',
+    'Kebab',
+    'Tenders croustillants',
+    'Nuggets'
   ];
 
   const scrollToSection = (sectionId) => {
