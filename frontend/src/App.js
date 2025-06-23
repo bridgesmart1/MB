@@ -397,6 +397,28 @@ const App = () => {
           </div>
 
           <div className="text-center mt-12">
+            <div className="bg-gradient-to-r from-gray-800 to-gray-900 rounded-2xl p-8 mb-8">
+              <h3 className="text-2xl font-bold text-orange-500 mb-6">🌶️ Nos Sauces Signature</h3>
+              <div className="grid md:grid-cols-4 gap-4 text-center">
+                <div className="text-gray-300">
+                  <div className="font-semibold mb-2">Classiques</div>
+                  <div className="text-sm">Ketchup, Mayonnaise, Moutarde</div>
+                </div>
+                <div className="text-gray-300">
+                  <div className="font-semibold mb-2">Épicées</div>
+                  <div className="text-sm">Algérienne, Harissa, Samurai</div>
+                </div>
+                <div className="text-gray-300">
+                  <div className="font-semibold mb-2">Gourmandes</div>
+                  <div className="text-sm">Barbecue, Brasil, Andalouse</div>
+                </div>
+                <div className="text-gray-300">
+                  <div className="font-semibold mb-2">Spéciales</div>
+                  <div className="text-sm">Sauce Blanche, Poivre, Biggy</div>
+                </div>
+              </div>
+            </div>
+            
             <a href="https://www.snapchat.com/add/mbfood13" target="_blank" rel="noopener noreferrer"
                className="inline-flex items-center bg-gradient-to-r from-orange-500 to-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-orange-600 hover:to-red-700 transition-all duration-300 transform hover:scale-105 shadow-2xl">
               <svg className="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
